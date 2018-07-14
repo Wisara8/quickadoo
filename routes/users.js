@@ -122,7 +122,9 @@ module.exports = knex => {
 
     castVotes(knex, voter_email, voterData, filteredOptions)
       .then(() => {
+        console.log("we are here ", poll_url);
         // 2 - redirect to the thanks page
+      
         res.status(200).render('thanks', { url: poll_url });
       })
       .catch(err => {

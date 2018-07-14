@@ -13,11 +13,19 @@
         <span class="input-group-addon">
           <i class="material-icons">file_copy</i>
         </span>
-        <input type="text" readonly class="form-control" value='<%= `http://10.30.33.183:8080/events/${formData[0].poll_url}` %>' />
+        <input type="text" readonly class="form-control ip-address-form"  value='' />
       </div>
     </article>
     <span class="alert alert-danger" role="alert">
-      <%= `Admin URL: http://10.30.33.183:8080/events/${formData[0].admin_url}` %>
+      <%= `Admin URL:` %> <span class="ip-address"></span><%= `:8080/events/${formData[0].admin_url}` %>
     </span>
+    <script>
+        window.onload = function() {
+          $('.ip-address').html(window.location.hostname);
+          $('.ip-address-form').val( 'http://' + window.location.hostname + '<%= `:8080/events/${formData[0].poll_url}` %>');
+        }
+    </script>
+
     <% } %>
+    
 </section>

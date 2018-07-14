@@ -1,0 +1,56 @@
+  window.onload = function() {
+          console.log("hello");
+          // $('.link').html('http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>');
+          //var temp = "http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>"
+          //console.log(temp);
+          //$(".link").attr("value", "http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>");
+          //$(".link").attr("href", "http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>");
+          // $('.link').href('http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>');
+          // $('.ip-address-form').val( 'http://' + window.location.hostname + '<%= :8080/events/${formData[0].poll_url} %>');
+        }
+
+
+
+        _thanks.ejs
+
+        <head>
+    <script type="text/javascript">
+          $('#document').ready(function(e){
+
+            
+            console.log("hello");
+            // $('.link').html('http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>');
+            //var temp = "http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>"
+            //console.log(temp);
+            //$(".link").attr("value", "http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>");
+            //$(".link").attr("href", "http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>");
+            // $('.link').href('http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>');
+            // $('.ip-address-form').val( 'http://' + window.location.hostname + '<%= :8080/events/${formData[0].poll_url} %>');
+        
+          });
+      </script>
+</head>
+<article>
+  <main>
+    <img src="/images/logo.png" alt="quickadoo_logo" />
+    <h5>Thanks for your vote!</h5>
+    <p>Share this Event with your friends using the link above.</p>
+    <!--<a class="link" href=""></a> -->  
+  </main>
+  <section>
+  
+  
+  </section>
+
+  <footer>
+    <h2>Test</h2>
+  </footer>
+</article>
+
+
+ // $('.link').html('http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>');
+      //var temp = "http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>"
+      //$(".link").attr("value", "http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>");
+      //$(".link").attr("href", "http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>");
+      // $('.link').href('http://' + window.location.hostname + '<%= `:8080/events/${locals.url}` %>');
+      // $('.ip-address-form').val( 'http://' + window.location.hostname + '<%= :8080/events/${formData[0].poll_url} %>');

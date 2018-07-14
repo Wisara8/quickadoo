@@ -1,10 +1,28 @@
+
+ <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+  </script>
+  <script type="text/javascript">
+   $('#document').ready(function(e){
+      var temp = window.location.href;
+      //console.log(temp);
+      var extractLink = temp.substring(0,temp.length-5);
+      //console.log(extractLink);
+      $(".link").attr('href',extractLink);
+      $(".link").prepend(extractLink);    
+        
+    });
+  </script>
 <article>
   <main>
-    <img src="/images/logo.png" alt="quickadoo_logo">
+    <img src="/images/logo.png" alt="quickadoo_logo" />
     <h5>Thanks for your vote!</h5>
     <p>Share this Event with your friends using the link above.</p>
-    <a href="http://10.30.33.183:8080/events/<%=locals.url%>">http://10.30.33.183:8080/events/<%=locals.url%></a>
+    <a class="link" href="" style="text-color:red"></a> 
   </main>
+
   <footer>
+    
   </footer>
 </article>

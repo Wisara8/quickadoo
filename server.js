@@ -3,7 +3,7 @@
 // enable dotenv package
 require('dotenv').config();
 
-const IP = '0.0.0.0';
+// const IP = window.location.hostname;
 // process.env.PORT in case Heroku
 const PORT = process.env.PORT || 8080;
 const ENV = process.env.ENV || "development";
@@ -58,6 +58,6 @@ app.use('/', usersRoutes(knex));
 // listen to port
 // if we set the IP address to '0.0.0.0', anyone can view the web page through my IP address
 // how to check IP address: 'ifconfig' on linux terminal -> check 'inet'
-app.listen(PORT, IP, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log("Example app listening on port " + PORT);
 });

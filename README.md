@@ -2,7 +2,7 @@
 # Quickadoo
 ## Plan your day with Quickadoo
 
-Quickadoo is a simple and fast Doodle clone.
+Quickadoo is a simple and fast Doodle clone where anyone on your local network can connect and vote.
 
 This project is meant for web developement students to combine front and back and skills learned during the first half of the bootcamp and interact with a Postgress database.
 
@@ -33,4 +33,5 @@ This project utilizes HTML, CSS, JS, EJS, jQuery and AJAX on the front-end; as w
 ## Getting Started
 
 -Install all dependencies (using the `npm install` command).
--Run the web server using the `npm run local` command.
+-Run the web server using the `npm run start` command.
+-Once the poll is created share the address with friends.
